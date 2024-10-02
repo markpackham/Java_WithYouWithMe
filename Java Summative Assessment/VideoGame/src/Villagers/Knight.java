@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Knight extends Villager{
 
+    // Weapons Enum used
     private Weapons weapon;
     private int strength;
 
@@ -57,10 +58,11 @@ public class Knight extends Villager{
         return strength;
     }
 
+    // Print out knight info
     public void print(){
-        System.out.println("Name: "+getFirstName() + " " + getLastName());
-        System.out.println("Age: "+getAge());
-        System.out.println("Strength: "+getStrength());
-        System.out.println("Weapon "+getWeapon());
+        System.out.println("Name: " + getFirstName() + " " + getLastName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Strength: " + getStrength());
+        System.out.println("Weapon " + getWeapon());
     }
 }

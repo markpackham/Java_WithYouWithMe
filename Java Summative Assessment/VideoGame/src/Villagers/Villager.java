@@ -1,6 +1,7 @@
 package Villagers;
 
-// Ultra generic class to base other classes off
+// Ultra generic class to base other human classes off
+// the subclasses will be used to give villagers professions
 public abstract class Villager {
 
     String FirstName;

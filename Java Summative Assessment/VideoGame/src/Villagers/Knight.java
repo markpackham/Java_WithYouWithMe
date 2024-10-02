@@ -17,7 +17,8 @@ public class Knight extends Villager{
     }
 
     private void generateStrength(){
-
+        Random rand = new Random();
+        strength = rand.nextInt(1, 10);
     }
 
     private void selectWeapon(){

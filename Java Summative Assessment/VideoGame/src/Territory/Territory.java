@@ -21,8 +21,18 @@ public class Territory {
         populateTerritory(Integer.parseInt(scanner.nextLine()));
     }
 
+    // User must fill out the 3 villager parameters, then calls the Knight constructor
     private void populateTerritory(int iterations){
-
+        Scanner scanner = new Scanner(System.in);
+        for(int i = 0; i<iterations-1; i++){
+            System.out.print("\nEnter first name:" );
+            String fName = scanner.nextLine();
+            System.out.print("Enter last name: ");
+            String sName = scanner.nextLine();
+            System.out.print("Enter age: ");
+            int age = Integer.parseInt(scanner.nextLine());
+            this.villagers.add(new Knight(fName, sName, age));
+        }
     }
 
     public String getName() {

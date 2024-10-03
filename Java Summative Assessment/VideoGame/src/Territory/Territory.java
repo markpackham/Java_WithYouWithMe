@@ -17,19 +17,22 @@ public class Territory {
         Scanner scanner = new Scanner(System.in);
         System.out.print("\nName of territory: ");
         this.name = scanner.nextLine();
-        System.out.print("How big is your territory?: ");
+        System.out.print("How many people live in your territory?: ");
         populateTerritory(Integer.parseInt(scanner.nextLine()));
+
+        System.out.print("\nAll the people who live there\n");
+        printVillagers();
     }
 
     // User must fill out the 3 villager parameters, then calls the Knight constructor
     private void populateTerritory(int iterations){
         Scanner scanner = new Scanner(System.in);
-        for(int i = 0; i<iterations-1; i++){
-            System.out.print("\nEnter first name:" );
+        for(int i = 0; i<iterations; i++){
+            System.out.print("\nEnter Knight first name:" );
             String fName = scanner.nextLine();
-            System.out.print("Enter last name: ");
+            System.out.print("Enter Knight last name: ");
             String sName = scanner.nextLine();
-            System.out.print("Enter age: ");
+            System.out.print("Enter Knight age: ");
             int age = Integer.parseInt(scanner.nextLine());
             this.villagers.add(new Knight(fName, sName, age));
         }
